@@ -1,0 +1,1698 @@
+6-max 100bb preflop (169 classes). EV per player (bb/hand): UTG +0.111, HJ +0.127, CO +0.145, BTN +0.166, SB -0.237, BB -0.321
+max best-response gain: 0.00002 bb
+
+=== UTG acts after: (start)   (reached 100.00%)
+overall: F 83.8%  R2.5 16.2%
+-- R2.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s  65  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s 100  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo 100  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo 100  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o  55  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44  26  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== HJ acts after: UTG:F   (reached 83.80%)
+overall: F 80.7%  R2.5 19.3%
+-- R2.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s  24  A2s   0
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo 100  QJo  45   JJ 100  JTs 100  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo 100  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o 100  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44 100  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== CO acts after: UTG:F HJ:F   (reached 67.60%)
+overall: F 76.1%  R2.5 23.9%
+-- R2.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo 100  QTo 100  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o 100  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o 100  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o 100  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o  60  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44 100  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BTN acts after: UTG:F HJ:F CO:F   (reached 51.43%)
+overall: F 69.1%  R2.5 30.9%
+-- R2.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s 100  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s 100  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo 100  QTo 100  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o 100  Q9o 100  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o 100  K8o 100  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o 100  K7o  99  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o 100  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o 100  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o 100  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44 100  43s   0  42s   0
+A3o 100  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== SB acts after: UTG:F HJ:F CO:F BTN:F   (reached 35.53%)
+overall: F 39.5%  R3 60.5%
+-- R3 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo 100  KTo 100  QTo 100  JTo 100   TT 100  T9s 100  T8s 100  T7s 100  T6s 100  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99 100  98s 100  97s 100  96s 100  95s   0  94s   0  93s   0  92s   0
+A8o 100  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88 100  87s 100  86s 100  85s   0  84s   0  83s   0  82s   0
+A7o 100  K7o 100  Q7o 100  J7o 100  T7o 100  97o   0  87o   0   77 100  76s 100  75s   0  74s   0  73s   0  72s   0
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o 100  K4o 100  Q4o 100  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44 100  43s   0  42s   0
+A3o 100  K3o 100  Q3o 100  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33 100  32s   0
+A2o 100  K2o 100  Q2o 100  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22 100
+
+
+=== BB acts after: UTG:F HJ:F CO:F BTN:F SB:R3   (reached 21.49%)
+overall: F 15.8%  C 66.5%  R9 17.7%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   5  A4s 100  A3s 100  A2s 100
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s 100  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo   0  KJo   0  QJo  99   JJ   0  JTs   1  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo   0  KTo  54  QTo 100  JTo 100   TT   0  T9s 100  T8s 100  T7s 100  T6s 100  T5s 100  T4s 100  T3s 100  T2s 100
+A9o   0  K9o 100  Q9o 100  J9o 100  T9o 100   99   0  98s 100  97s 100  96s 100  95s 100  94s 100  93s 100  92s 100
+A8o   0  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88   0  87s 100  86s 100  85s 100  84s 100  83s 100  82s 100
+A7o  35  K7o 100  Q7o 100  J7o 100  T7o 100  97o 100  87o 100   77   0  76s 100  75s 100  74s 100  73s 100  72s 100
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o 100  96o 100  86o 100  76o 100   66   0  65s 100  64s 100  63s 100  62s 100
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o 100  95o 100  85o 100  75o 100  65o 100   55   0  54s 100  53s 100  52s 100
+A4o 100  K4o 100  Q4o 100  J4o 100  T4o 100  94o   0  84o   0  74o  57  64o 100  54o 100   44   0  43s 100  42s 100
+A3o 100  K3o 100  Q3o 100  J3o 100  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33 100  32s 100
+A2o 100  K2o 100  Q2o 100  J2o 100  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22 100
+
+-- R9 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s  95  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo 100  QJo   1   JJ 100  JTs  99  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo  46  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o 100  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o  65  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44 100  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== SB acts after: UTG:F HJ:F CO:F BTN:F SB:R3 BB:R9   (reached 6.30%)
+overall: F 29.7%  C 60.8%  R22 0.0%  A 9.5%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s   0  A3s  21  A2s 100
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo 100  KQo 100   QQ   0  QJs   0  QTs  73  Q9s 100  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s  54
+AJo 100  KJo 100  QJo 100   JJ   0  JTs 100  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s   2  J3s   0  J2s   0
+ATo 100  KTo 100  QTo 100  JTo 100   TT 100  T9s 100  T8s 100  T7s 100  T6s 100  T5s   -  T4s   -  T3s   -  T2s   -
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99 100  98s 100  97s 100  96s 100  95s   -  94s   -  93s   -  92s   -
+A8o 100  K8o  32  Q8o   0  J8o   0  T8o  98  98o 100   88 100  87s 100  86s 100  85s   -  84s   -  83s   -  82s   -
+A7o 100  K7o   0  Q7o   0  J7o   0  T7o   0  97o   -  87o   -   77 100  76s 100  75s   -  74s   -  73s   -  72s   -
+A6o 100  K6o   0  Q6o   0  J6o   0  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o 100  K5o   0  Q5o   0  J5o   0  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o 100  K4o   0  Q4o   0  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44  36  43s   -  42s   -
+A3o 100  K3o   0  Q3o   0  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33  98  32s   -
+A2o 100  K2o   0  Q2o   0  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22 100
+
+-- R22 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT   0  T9s   0  T8s   0  T7s   0  T6s   0  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99   0  98s   0  97s   0  96s   0  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88   0  87s   0  86s   0  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   -  87o   -   77   0  76s   0  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   0  K4o   0  Q4o   0  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   0  K3o   0  Q3o   0  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   0  32s   -
+A2o   0  K2o   0  Q2o   0  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   0
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s 100  A3s  79  A2s   0
+AKo 100   KK 100  KQs 100  KJs 100  KTs 100  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo   0  KQo   0   QQ 100  QJs 100  QTs  27  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo   0  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT   0  T9s   0  T8s   0  T7s   0  T6s   0  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99   0  98s   0  97s   0  96s   0  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88   0  87s   0  86s   0  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   -  87o   -   77   0  76s   0  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   0  K4o   0  Q4o   0  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44  64  43s   -  42s   -
+A3o   0  K3o   0  Q3o   0  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   2  32s   -
+A2o   0  K2o   0  Q2o   0  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   0
+
+
+=== SB acts after: UTG:F HJ:F CO:F BTN:F SB:R3 BB:R9 SB:R22 BB:A   (reached 1.03%)
+overall: F 39.6%  C 60.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BB acts after: UTG:F HJ:F CO:F BTN:F SB:R3 BB:R9 SB:A   (reached 2.04%)
+overall: F 75.9%  C 24.1%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   -  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo  20  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ 100  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   7  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== SB acts after: UTG:F HJ:F CO:F BTN:R2.5   (reached 15.90%)
+overall: F 87.0%  R11 13.0%
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs 100  KTs   1  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo 100   QQ 100  QJs  95  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o 100  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55 100  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44  79  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BB acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:F   (reached 13.83%)
+overall: F 0.0%  C 91.0%  R11 9.0%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo   0   KK   0  KQs   0  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo   0  KQo  75   QQ   0  QJs   0  QTs 100  Q9s 100  Q8s  89  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo   0  KJo 100  QJo 100   JJ   0  JTs   0  J9s   0  J8s  41  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo 100  KTo 100  QTo 100  JTo 100   TT   0  T9s  66  T8s 100  T7s 100  T6s 100  T5s 100  T4s 100  T3s 100  T2s 100
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99   0  98s 100  97s 100  96s 100  95s 100  94s 100  93s 100  92s 100
+A8o 100  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88   0  87s 100  86s 100  85s 100  84s 100  83s 100  82s 100
+A7o 100  K7o 100  Q7o 100  J7o 100  T7o 100  97o 100  87o 100   77   8  76s 100  75s 100  74s 100  73s 100  72s 100
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o 100  96o 100  86o 100  76o 100   66 100  65s 100  64s 100  63s 100  62s 100
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o 100  95o 100  85o 100  75o 100  65o 100   55 100  54s 100  53s 100  52s 100
+A4o 100  K4o 100  Q4o 100  J4o 100  T4o 100  94o 100  84o 100  74o 100  64o 100  54o 100   44 100  43s 100  42s 100
+A3o 100  K3o 100  Q3o 100  J3o 100  T3o 100  93o 100  83o 100  73o 100  63o 100  53o 100  43o 100   33 100  32s 100
+A2o 100  K2o 100  Q2o 100  J2o 100  T2o 100  92o 100  82o 100  72o 100  62o 100  52o 100  42o 100  32o 100   22 100
+
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo  25   QQ 100  QJs 100  QTs   0  Q9s   0  Q8s  11  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs 100  J9s 100  J8s  59  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s  34  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77  92  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BTN acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:F BB:R11   (reached 4.00%)
+overall: F 55.4%  C 34.1%  R24 0.0%  A 10.5%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s   4  A6s   0  A5s  26  A4s  91  A3s   0  A2s   0
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ   0  QJs 100  QTs 100  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo   0  QJo   0   JJ 100  JTs 100  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo   0  QTo   0  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  96  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44  53  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s  74  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   4  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:F BB:R11 BTN:R24 BB:A   (reached 0.93%)
+overall: F 21.7%  C 78.3%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BB acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:F BB:R11 BTN:A   (reached 1.46%)
+overall: F 69.6%  C 30.4%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  96   KK 100  KQs   0  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   0  QTs   -  Q9s   -  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   0  J9s   0  J8s   0  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  43  T9s   0  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:R11   (reached 6.69%)
+overall: F 46.9%  C 36.7%  R24 0.0%  A 16.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s   0  A3s   0  A2s  32
+AKo   0   KK   0  KQs   0  KJs   0  KTs 100  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ   0  QJs  89  QTs 100  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo  63  QJo   0   JJ   0  JTs 100  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo   0  QTo   0  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o 100  K9o   0  Q9o   0  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s 100  A3s 100  A2s  68
+AKo 100   KK 100  KQs 100  KJs 100  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs  11  QTs   0  Q9s   0  Q8s   0  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   0  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   0  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   0  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   0  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   0  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   0  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:R11 BTN:R24 SB:A   (reached 1.58%)
+overall: F 19.6%  C 80.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== SB acts after: UTG:F HJ:F CO:F BTN:R2.5 SB:R11 BTN:A   (reached 2.61%)
+overall: F 69.7%  C 30.3%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs   0  ATs   0  A9s   0  A8s   0  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo  28  KQo   0   QQ 100  QJs   0  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   -  QTo   -  JTo   -   TT  83  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:F CO:R2.5   (reached 16.17%)
+overall: F 90.7%  R7.5 9.3%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s 100  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66  56  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== SB acts after: UTG:F HJ:F CO:R2.5 BTN:F   (reached 14.67%)
+overall: F 90.0%  R11 10.0%
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs   1  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo  72   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo 100  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66 100  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55  38  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BB acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:F   (reached 13.20%)
+overall: F 0.9%  C 92.6%  R11 6.5%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo   0   KK   0  KQs   0  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo   0  KQo  88   QQ   0  QJs 100  QTs  15  Q9s   1  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo 100  KJo 100  QJo 100   JJ   0  JTs   0  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo 100  KTo 100  QTo 100  JTo 100   TT   0  T9s  80  T8s 100  T7s 100  T6s 100  T5s 100  T4s 100  T3s 100  T2s 100
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99   0  98s 100  97s 100  96s 100  95s 100  94s 100  93s 100  92s 100
+A8o 100  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88 100  87s 100  86s 100  85s 100  84s 100  83s 100  82s 100
+A7o 100  K7o 100  Q7o 100  J7o 100  T7o 100  97o 100  87o 100   77 100  76s 100  75s 100  74s 100  73s 100  72s 100
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o 100  96o 100  86o 100  76o 100   66 100  65s 100  64s 100  63s 100  62s 100
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o 100  95o 100  85o 100  75o 100  65o 100   55 100  54s 100  53s 100  52s 100
+A4o 100  K4o 100  Q4o 100  J4o 100  T4o 100  94o 100  84o 100  74o 100  64o 100  54o 100   44 100  43s 100  42s 100
+A3o 100  K3o 100  Q3o 100  J3o 100  T3o 100  93o 100  83o 100  73o 100  63o 100  53o 100  43o 100   33 100  32s 100
+A2o 100  K2o 100  Q2o 100  J2o 100  T2o 100  92o 100  82o 100  72o   1  62o 100  52o 100  42o 100  32o 100   22 100
+
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo  12   QQ 100  QJs   0  QTs  85  Q9s  99  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo   0  KJo   0  QJo   0   JJ 100  JTs 100  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s  20  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88   0  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:F BB:R11   (reached 3.56%)
+overall: F 55.8%  C 33.8%  R24 0.0%  A 10.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s   0  A7s   0  A6s   0  A5s  35  A4s  50  A3s   0  A2s   0
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo  81   QQ  96  QJs 100  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo   0  QJo   0   JJ  99  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77  84  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  54  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   1  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s  65  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   4  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   1  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  37  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:F BB:R11 CO:R24 BB:A   (reached 0.89%)
+overall: F 24.6%  C 75.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BB acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:F BB:R11 CO:A   (reached 1.38%)
+overall: F 69.8%  C 30.2%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  57   KK 100  KQs   0  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   2  QJs   -  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ  30  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  19  T9s   0  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:R11   (reached 6.15%)
+overall: F 42.6%  C 42.4%  R24 0.0%  A 15.0%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s  97  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs  73  KJs 100  KTs  80  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ   0  QJs 100  QTs  16  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo   0  QJo   0   JJ 100  JTs  99  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo   0  QTo   0  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   3  A6s   0  A5s 100  A4s 100  A3s 100  A2s   6
+AKo 100   KK 100  KQs  27  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:R11 CO:R24 SB:A   (reached 1.55%)
+overall: F 21.3%  C 78.7%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== SB acts after: UTG:F HJ:F CO:R2.5 BTN:F SB:R11 CO:A   (reached 2.19%)
+overall: F 69.9%  C 30.1%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ  56  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   -  QTo   -  JTo   -   TT  45  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:R7.5   (reached 6.29%)
+overall: F 0.0%  C 88.8%  R19 0.0%  A 11.2%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  67  A3s 100  A2s 100
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s 100  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ  94  QJs 100  QTs 100  Q9s 100  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo 100  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o 100  K9o 100  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o 100  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o 100  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  97  65s   -  64s   -  63s   -  62s   -
+A5o 100  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  70  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  33  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   6  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   0  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   0  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   0  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   3  65s   -  64s   -  63s   -  62s   -
+A5o   0  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  30  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:F CO:R2.5 BTN:R7.5 CO:R19 BTN:A   (reached 1.25%)
+overall: F 44.7%  C 55.3%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:F CO:R2.5 BTN:R7.5 CO:A   (reached 1.82%)
+overall: F 75.1%  C 24.9%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  84   KK 100  KQs   0  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ  34  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   3  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   -  QTo   -  JTo   -   TT  41  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:R2.5   (reached 16.20%)
+overall: F 92.7%  R7.5 7.3%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs  11  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77  40  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BTN acts after: UTG:F HJ:R2.5 CO:F   (reached 15.02%)
+overall: F 92.7%  R7.5 7.3%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs  10  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77  37  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== SB acts after: UTG:F HJ:R2.5 CO:F BTN:F   (reached 13.92%)
+overall: F 91.6%  R11 8.4%
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs 100  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs  81  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo  24   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77 100  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66  32  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BB acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:F   (reached 12.75%)
+overall: F 3.7%  C 91.1%  R11 5.2%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo   0   KK   0  KQs  43  KJs  89  KTs 100  K9s 100  K8s 100  K7s 100  K6s 100  K5s 100  K4s 100  K3s 100  K2s 100
+AQo  59  KQo 100   QQ   0  QJs   2  QTs   4  Q9s 100  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo 100  KJo 100  QJo  99   JJ   0  JTs   1  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo 100  KTo 100  QTo 100  JTo  98   TT  27  T9s 100  T8s 100  T7s 100  T6s 100  T5s 100  T4s 100  T3s 100  T2s 100
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99 100  98s 100  97s 100  96s 100  95s 100  94s 100  93s 100  92s 100
+A8o 100  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88 100  87s 100  86s 100  85s 100  84s 100  83s 100  82s 100
+A7o 100  K7o 100  Q7o 100  J7o 100  T7o 100  97o 100  87o 100   77 100  76s 100  75s 100  74s 100  73s 100  72s 100
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o 100  96o 100  86o 100  76o 100   66 100  65s 100  64s 100  63s 100  62s 100
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o 100  95o 100  85o 100  75o 100  65o 100   55 100  54s 100  53s 100  52s 100
+A4o 100  K4o 100  Q4o 100  J4o 100  T4o 100  94o 100  84o 100  74o 100  64o 100  54o 100   44 100  43s 100  42s 100
+A3o 100  K3o 100  Q3o 100  J3o 100  T3o 100  93o 100  83o   1  73o 100  63o 100  53o 100  43o 100   33 100  32s 100
+A2o 100  K2o 100  Q2o 100  J2o 100  T2o 100  92o  97  82o   1  72o   0  62o  93  52o 100  42o 100  32o   0   22 100
+
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs  57  KJs  11  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo  41  KQo   0   QQ 100  QJs  98  QTs  96  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo   0  KJo   0  QJo   1   JJ 100  JTs  99  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   2   TT  73  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99   0  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88   0  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:F BB:R11   (reached 3.40%)
+overall: F 58.9%  C 28.8%  R24 0.0%  A 12.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s   0  A8s   0  A7s   0  A6s   0  A5s  35  A4s  38  A3s   0  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs  98  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo   0   QQ 100  QJs   4  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo  18  KJo   0  QJo   0   JJ 100  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77  41  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   1  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s  65  A4s   0  A3s   0  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  18  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:F BB:R11 HJ:R24 BB:A   (reached 0.70%)
+overall: F 13.9%  C 86.1%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BB acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:F BB:R11 HJ:A   (reached 1.58%)
+overall: F 70.0%  C 30.0%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  38   KK 100  KQs   0  KJs   0  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   0   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:R11   (reached 6.08%)
+overall: F 51.3%  C 31.9%  R24 0.0%  A 16.8%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s   1  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs   1  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo  14   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo   0  QJo   0   JJ 100  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  18  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  79  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   4  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s  69  A4s   0  A3s   0  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  82  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  21  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:R11 HJ:R24 SB:A   (reached 1.46%)
+overall: F 12.6%  C 87.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== SB acts after: UTG:F HJ:R2.5 CO:F BTN:F SB:R11 HJ:A   (reached 2.33%)
+overall: F 68.6%  C 31.4%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  92   KK 100  KQs   0  KJs   0  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ 100  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  35  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:R7.5   (reached 5.66%)
+overall: F 6.7%  C 79.7%  R19 0.0%  A 13.6%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  68  A3s 100  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o  57  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  72  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  32  A3s   0  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  28  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:F BTN:R7.5 HJ:R19 BTN:A   (reached 1.02%)
+overall: F 44.8%  C 55.2%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:F HJ:R2.5 CO:F BTN:R7.5 HJ:A   (reached 2.05%)
+overall: F 74.8%  C 25.2%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  58   KK 100  KQs   0  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  24  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:R7.5   (reached 6.12%)
+overall: F 6.8%  C 79.6%  R19 0.0%  A 13.6%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  68  A3s 100  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s 100  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s 100  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo 100   JJ 100  JTs 100  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o  55  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  72  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  32  A3s   0  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   0  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   0   JJ   0  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   0  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  28  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:F HJ:R2.5 CO:R7.5 HJ:R19 CO:A   (reached 1.18%)
+overall: F 39.2%  C 60.8%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:F HJ:R2.5 CO:R7.5 HJ:A   (reached 2.21%)
+overall: F 74.8%  C 25.2%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  58   KK 100  KQs   0  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  24  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:R2.5   (reached 16.20%)
+overall: F 93.6%  R7.5 6.4%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo  73  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88  59  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== CO acts after: UTG:R2.5 HJ:F   (reached 15.17%)
+overall: F 93.7%  R7.5 6.3%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo  59  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88  83  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BTN acts after: UTG:R2.5 HJ:F CO:F   (reached 14.21%)
+overall: F 93.6%  R7.5 6.4%
+-- R7.5 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo  78  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88  59  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== SB acts after: UTG:R2.5 HJ:F CO:F BTN:F   (reached 13.30%)
+overall: F 92.9%  R11 7.1%
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs 100  KJs   9  KTs   0  K9s   0  K8s   0  K7s   0  K6s   0  K5s   0  K4s   0  K3s   0  K2s   0
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo  93  KJo   0  QJo   0   JJ 100  JTs   0  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT 100  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99 100  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88 100  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77  16  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== BB acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:F   (reached 12.35%)
+overall: F 9.5%  C 86.2%  R11 4.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   3  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s 100  A4s 100  A3s 100  A2s 100
+AKo   0   KK   0  KQs  99  KJs  72  KTs  48  K9s  14  K8s 100  K7s 100  K6s 100  K5s 100  K4s  95  K3s  98  K2s 100
+AQo  87  KQo 100   QQ   0  QJs  55  QTs  61  Q9s 100  Q8s 100  Q7s 100  Q6s 100  Q5s 100  Q4s 100  Q3s 100  Q2s 100
+AJo 100  KJo 100  QJo 100   JJ   0  JTs  66  J9s 100  J8s 100  J7s 100  J6s 100  J5s 100  J4s 100  J3s 100  J2s 100
+ATo 100  KTo 100  QTo 100  JTo 100   TT  90  T9s 100  T8s 100  T7s 100  T6s 100  T5s 100  T4s 100  T3s 100  T2s 100
+A9o 100  K9o 100  Q9o 100  J9o 100  T9o 100   99 100  98s 100  97s 100  96s 100  95s 100  94s 100  93s 100  92s 100
+A8o 100  K8o 100  Q8o 100  J8o 100  T8o 100  98o 100   88 100  87s 100  86s 100  85s 100  84s 100  83s 100  82s 100
+A7o 100  K7o 100  Q7o 100  J7o 100  T7o 100  97o 100  87o 100   77 100  76s 100  75s 100  74s 100  73s 100  72s 100
+A6o 100  K6o 100  Q6o 100  J6o 100  T6o 100  96o 100  86o 100  76o 100   66 100  65s 100  64s 100  63s 100  62s 100
+A5o 100  K5o 100  Q5o 100  J5o 100  T5o 100  95o 100  85o 100  75o 100  65o 100   55 100  54s 100  53s 100  52s 100
+A4o 100  K4o 100  Q4o 100  J4o 100  T4o 100  94o   3  84o 100  74o 100  64o 100  54o 100   44 100  43s 100  42s 100
+A3o 100  K3o 100  Q3o 100  J3o 100  T3o 100  93o   3  83o   0  73o  48  63o 100  53o 100  43o 100   33 100  32s 100
+A2o 100  K2o 100  Q2o 100  J2o 100  T2o   1  92o   0  82o   0  72o   0  62o   0  52o 100  42o   0  32o   0   22 100
+
+-- R11 frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs  97  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   0  A2s   0
+AKo 100   KK 100  KQs   1  KJs  28  KTs  52  K9s  86  K8s   0  K7s   0  K6s   0  K5s   0  K4s   5  K3s   2  K2s   0
+AQo  13  KQo   0   QQ 100  QJs  45  QTs  39  Q9s   0  Q8s   0  Q7s   0  Q6s   0  Q5s   0  Q4s   0  Q3s   0  Q2s   0
+AJo   0  KJo   0  QJo   0   JJ 100  JTs  34  J9s   0  J8s   0  J7s   0  J6s   0  J5s   0  J4s   0  J3s   0  J2s   0
+ATo   0  KTo   0  QTo   0  JTo   0   TT  10  T9s   0  T8s   0  T7s   0  T6s   0  T5s   0  T4s   0  T3s   0  T2s   0
+A9o   0  K9o   0  Q9o   0  J9o   0  T9o   0   99   0  98s   0  97s   0  96s   0  95s   0  94s   0  93s   0  92s   0
+A8o   0  K8o   0  Q8o   0  J8o   0  T8o   0  98o   0   88   0  87s   0  86s   0  85s   0  84s   0  83s   0  82s   0
+A7o   0  K7o   0  Q7o   0  J7o   0  T7o   0  97o   0  87o   0   77   0  76s   0  75s   0  74s   0  73s   0  72s   0
+A6o   0  K6o   0  Q6o   0  J6o   0  T6o   0  96o   0  86o   0  76o   0   66   0  65s   0  64s   0  63s   0  62s   0
+A5o   0  K5o   0  Q5o   0  J5o   0  T5o   0  95o   0  85o   0  75o   0  65o   0   55   0  54s   0  53s   0  52s   0
+A4o   0  K4o   0  Q4o   0  J4o   0  T4o   0  94o   0  84o   0  74o   0  64o   0  54o   0   44   0  43s   0  42s   0
+A3o   0  K3o   0  Q3o   0  J3o   0  T3o   0  93o   0  83o   0  73o   0  63o   0  53o   0  43o   0   33   0  32s   0
+A2o   0  K2o   0  Q2o   0  J2o   0  T2o   0  92o   0  82o   0  72o   0  62o   0  52o   0  42o   0  32o   0   22   0
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:F BB:R11   (reached 3.32%)
+overall: F 56.8%  C 32.4%  R24 0.0%  A 10.9%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs  97  A9s   0  A8s   0  A7s   0  A6s   0  A5s  36  A4s   7  A3s   -  A2s   -
+AKo   0   KK  81  KQs 100  KJs 100  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo   0   QQ 100  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88  98  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77  18  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   4  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   5  A4s   0  A3s   -  A2s   -
+AKo 100   KK  19  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:F BB:R11 UTG:R24 BB:A   (reached 0.77%)
+overall: F 31.3%  C 68.7%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BB acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:F BB:R11 UTG:A   (reached 1.34%)
+overall: F 70.7%  C 29.3%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   0   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   0  K3s   0  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ  12  JTs   0  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  36  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:R11   (reached 5.85%)
+overall: F 49.7%  C 34.9%  R24 0.0%  A 15.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs 100  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo   0   QQ  95  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo  78  KJo   0  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  62  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55  36  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R24 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   5  A9s   0  A8s   0  A7s   0  A6s   0  A5s  57  A4s   0  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   5  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66  37  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:R11 UTG:R24 SB:A   (reached 1.31%)
+overall: F 12.2%  C 87.8%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== SB acts after: UTG:R2.5 HJ:F CO:F BTN:F SB:R11 UTG:A   (reached 2.04%)
+overall: F 68.7%  C 31.3%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  70   KK 100  KQs   0  KJs   0  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ  44  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ  10  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT  31  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:R7.5   (reached 5.62%)
+overall: F 3.1%  C 81.5%  R19 0.0%  A 15.5%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  54  A3s   -  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  46  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:F BTN:R7.5 UTG:R19 BTN:A   (reached 1.12%)
+overall: F 43.9%  C 56.1%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== BTN acts after: UTG:R2.5 HJ:F CO:F BTN:R7.5 UTG:A   (reached 2.20%)
+overall: F 74.9%  C 25.1%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  45   KK 100  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:R7.5   (reached 5.94%)
+overall: F 3.1%  C 81.5%  R19 0.0%  A 15.4%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  54  A3s   -  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  46  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:F CO:R7.5 UTG:R19 CO:A   (reached 1.29%)
+overall: F 47.3%  C 52.7%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== CO acts after: UTG:R2.5 HJ:F CO:R7.5 UTG:A   (reached 2.34%)
+overall: F 74.9%  C 25.1%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  43   KK 100  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:R7.5   (reached 6.36%)
+overall: F 3.1%  C 81.5%  R19 0.0%  A 15.5%
+-- C frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs 100  AJs 100  ATs 100  A9s 100  A8s 100  A7s 100  A6s 100  A5s   0  A4s  54  A3s   -  A2s   -
+AKo   0   KK   0  KQs 100  KJs 100  KTs 100  K9s 100  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo 100  KQo 100   QQ 100  QJs 100  QTs 100  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo 100  KJo 100  QJo   -   JJ 100  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo 100  KTo 100  QTo   -  JTo   -   TT 100  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99 100  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88 100  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77 100  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66 100  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55 100  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44 100  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- R19 frequency (%), '-' = hand not in range here
+ AA   0  AKs   0  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s   0  A4s   0  A3s   -  A2s   -
+AKo   0   KK   0  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+-- A frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   0  A9s   0  A8s   0  A7s   0  A6s   0  A5s 100  A4s  46  A3s   -  A2s   -
+AKo 100   KK 100  KQs   0  KJs   0  KTs   0  K9s   0  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   0   QQ   0  QJs   0  QTs   0  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   0  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   0  KTo   0  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   0  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   0  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   0  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   0  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   0  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== UTG acts after: UTG:R2.5 HJ:R7.5 UTG:R19 HJ:A   (reached 1.27%)
+overall: F 38.2%  C 61.8%
+-- C frequency (%), '-' = hand not in range here
+ AA   -  AKs   -  AQs   -  AJs   -  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo   -   KK   -  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   -  KQo   -   QQ   -  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   -  KJo   -  QJo   -   JJ   -  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   -  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   -  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   -  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+
+=== HJ acts after: UTG:R2.5 HJ:R7.5 UTG:A   (reached 2.50%)
+overall: F 74.9%  C 25.1%
+-- C frequency (%), '-' = hand not in range here
+ AA 100  AKs 100  AQs   0  AJs   0  ATs   -  A9s   -  A8s   -  A7s   -  A6s   -  A5s   -  A4s   -  A3s   -  A2s   -
+AKo  43   KK 100  KQs   -  KJs   -  KTs   -  K9s   -  K8s   -  K7s   -  K6s   -  K5s   -  K4s   -  K3s   -  K2s   -
+AQo   0  KQo   -   QQ   0  QJs   -  QTs   -  Q9s   -  Q8s   -  Q7s   -  Q6s   -  Q5s   -  Q4s   -  Q3s   -  Q2s   -
+AJo   0  KJo   -  QJo   -   JJ   0  JTs   -  J9s   -  J8s   -  J7s   -  J6s   -  J5s   -  J4s   -  J3s   -  J2s   -
+ATo   -  KTo   -  QTo   -  JTo   -   TT   0  T9s   -  T8s   -  T7s   -  T6s   -  T5s   -  T4s   -  T3s   -  T2s   -
+A9o   -  K9o   -  Q9o   -  J9o   -  T9o   -   99   0  98s   -  97s   -  96s   -  95s   -  94s   -  93s   -  92s   -
+A8o   -  K8o   -  Q8o   -  J8o   -  T8o   -  98o   -   88   0  87s   -  86s   -  85s   -  84s   -  83s   -  82s   -
+A7o   -  K7o   -  Q7o   -  J7o   -  T7o   -  97o   -  87o   -   77   -  76s   -  75s   -  74s   -  73s   -  72s   -
+A6o   -  K6o   -  Q6o   -  J6o   -  T6o   -  96o   -  86o   -  76o   -   66   -  65s   -  64s   -  63s   -  62s   -
+A5o   -  K5o   -  Q5o   -  J5o   -  T5o   -  95o   -  85o   -  75o   -  65o   -   55   -  54s   -  53s   -  52s   -
+A4o   -  K4o   -  Q4o   -  J4o   -  T4o   -  94o   -  84o   -  74o   -  64o   -  54o   -   44   -  43s   -  42s   -
+A3o   -  K3o   -  Q3o   -  J3o   -  T3o   -  93o   -  83o   -  73o   -  63o   -  53o   -  43o   -   33   -  32s   -
+A2o   -  K2o   -  Q2o   -  J2o   -  T2o   -  92o   -  82o   -  72o   -  62o   -  52o   -  42o   -  32o   -   22   -
+
+

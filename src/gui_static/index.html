@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTO 解算檢視器</title>
+<style>
+:root{
+  --bg:#0f1218; --panel:#171b24; --panel2:#1f2431; --line:#2a3040; --text:#e6e9ef; --muted:#8a93a6; --accent:#5aa7ff;
+  --empty:#1a1f2b;
+  font-family:"Segoe UI","Microsoft JhengHei","PingFang TC",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-size:14px}
+header{display:flex;align-items:center;gap:14px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5;flex-wrap:wrap}
+header h1{font-size:16px;margin:0;font-weight:600;white-space:nowrap}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button{background:none;border:1px solid transparent;color:var(--muted);padding:6px 12px;border-radius:6px;font:inherit;cursor:pointer}
+nav button.on{background:var(--panel2);color:var(--text);border-color:var(--line)}
+.grow{flex:1}
+main{padding:16px;max-width:1560px;margin:0 auto}
+.view{display:none}.view.on{display:block}
+.row{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;min-width:0}
+.card h2{font-size:17px;margin:4px 0 2px;font-weight:600}
+.card h3{font-size:14px;margin:0 0 8px;font-weight:600}
+select,button.b,label.b{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}
+button.b:hover,select:hover{border-color:var(--accent)}
+label.b input{vertical-align:-2px;margin:0 4px 0 0}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font-size:13px;margin:8px 0}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.bar{display:flex;height:24px;border-radius:5px;overflow:hidden;background:var(--empty);margin:10px 0}
+.bar>div{height:100%;display:flex;align-items:center;justify-content:center;font-size:11.5px;color:#fff;overflow:hidden;white-space:nowrap;text-shadow:0 0 2px #0008}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.acts button{border-radius:6px;padding:6px 10px;border:1px solid #fff2;color:#fff;font:inherit;cursor:pointer;text-shadow:0 0 2px #0008}
+.acts button:hover:not(:disabled){outline:2px solid #fff8}
+.acts button:disabled{opacity:.4;cursor:default}
+.crumbs{display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:12.5px}
+.crumbs span{padding:3px 7px;border-radius:5px;background:var(--panel2);cursor:pointer;border:1px solid var(--line)}
+.crumbs span.fold{opacity:.5}
+.crumbs span:hover{border-color:var(--accent)}
+.tip{position:fixed;pointer-events:none;background:#0b0d12f2;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;z-index:20;display:none;min-width:150px;line-height:1.55}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{cursor:pointer;color:var(--muted);font-weight:500;position:sticky;top:0;background:var(--panel)}
+td:first-child,th:first-child{text-align:left}
+tbody tr:hover{background:var(--panel2);cursor:pointer}
+.side{width:310px;max-height:calc(100vh - 110px);overflow:auto;position:sticky;top:70px}
+.nodelist div{padding:4px 8px;border-radius:5px;cursor:pointer;font-size:12.5px;display:flex;justify-content:space-between;gap:8px}
+.nodelist div:hover{background:var(--panel2)}
+.nodelist div.on{background:var(--panel2);outline:1px solid var(--accent)}
+.nodelist h4{margin:12px 0 4px;font-size:12px;color:var(--muted);font-weight:500}
+.board{display:inline-flex;gap:4px;vertical-align:middle}
+.pc{display:inline-flex;align-items:center;justify-content:center;width:30px;height:40px;border-radius:5px;font-weight:700;font-size:16px;color:#fff;line-height:1}
+.detail{width:340px;max-width:100%}
+.detail table td,.detail table th{padding:3px 5px}
+.pcell{position:relative}
+.pcell i{position:absolute;left:0;top:2px;bottom:2px;opacity:.35;border-radius:2px}
+.pcell b{position:relative;font-weight:400}
+.scroll{max-height:460px;overflow:auto}
+.toast{position:fixed;right:16px;bottom:16px;background:var(--panel2);border:1px solid var(--line);padding:10px 14px;border-radius:8px;display:none;z-index:30;max-width:460px;font-size:13px}
+canvas{display:block}
+.hint{font-size:12px;color:var(--muted);margin-top:6px}
+@media (max-width:860px){.side{width:100%;max-height:280px;position:static}.detail{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <h1>6-max 100bb GTO 檢視器</h1>
+  <nav id="tabs">
+    <button data-tab="preflop">翻前範圍</button>
+    <button data-tab="flop">翻牌策略</button>
+    <button data-tab="boards">牌面總覽</button>
+    <button data-tab="spots">場景總表</button>
+    <button data-tab="real">權益實現率</button>
+  </nav>
+  <div class="grow"></div>
+  <label class="muted small">迭代輪次
+    <select id="pass"></select></label>
+  <button class="b" id="export-all">匯出全部圖片</button>
+</header>
+
+<main>
+<!-- PREFLOP -->
+<section class="view" id="v-preflop">
+  <div class="row">
+    <div class="card side"><div class="nodelist" id="pf-list"></div></div>
+    <div class="card" style="flex:1;min-width:300px">
+      <div class="crumbs" id="pf-crumbs"></div>
+      <h2 id="pf-title"></h2>
+      <div class="muted" id="pf-sub"></div>
+      <div class="bar" id="pf-bar"></div>
+      <div class="acts" id="pf-acts"></div>
+      <div class="row">
+        <div><canvas id="pf-grid"></canvas><div class="legend" id="pf-legend"></div></div>
+        <div class="detail" id="pf-detail"></div>
+      </div>
+      <div class="tools">
+        <label class="b"><input type="checkbox" id="pf-w" checked>依範圍權重顯示高度</label>
+        <button class="b" id="pf-png">匯出此圖 PNG</button>
+        <button class="b" id="pf-png-all">匯出全部翻前圖</button>
+      </div>
+      <div class="hint">格子顏色＝各動作頻率（左到右），格子填滿高度＝該手牌仍在範圍內的比例。點格子看細節，點上方動作按鈕往下走。</div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOP -->
+<section class="view" id="v-flop">
+  <div class="card">
+    <div class="tools" style="margin-top:0">
+      <select id="fl-spot"></select>
+      <button class="b" id="fl-prev">◀</button>
+      <select id="fl-flop"></select>
+      <button class="b" id="fl-next">▶</button>
+      <span id="fl-board" class="board"></span>
+      <span class="muted small" id="fl-info"></span>
+    </div>
+    <div class="crumbs" id="fl-crumbs"></div>
+    <h2 id="fl-title"></h2>
+    <div class="muted" id="fl-sub"></div>
+    <div class="bar" id="fl-bar"></div>
+    <div class="acts" id="fl-acts"></div>
+    <div class="row">
+      <div><canvas id="fl-grid"></canvas><div class="legend" id="fl-legend"></div></div>
+      <div class="detail" id="fl-detail"></div>
+    </div>
+    <div class="tools">
+      <select id="fl-mode"><option value="s">顯示：策略</option><option value="ev">顯示：翻牌起點 EV</option></select>
+      <label class="b"><input type="checkbox" id="fl-w" checked>依範圍權重顯示高度</label>
+      <button class="b" id="fl-png">匯出此圖 PNG</button>
+      <button class="b" id="fl-png-all">匯出此場景 49 個翻牌（目前節點）</button>
+    </div>
+    <div class="hint" id="fl-rep"></div>
+  </div>
+</section>
+
+<!-- BOARDS -->
+<section class="view" id="v-boards">
+  <div class="card">
+    <div class="tools" style="margin-top:0">
+      <select id="bd-spot"></select>
+      <select id="bd-node"></select>
+      <select id="bd-sort">
+        <option value="w">排序：牌面權重</option>
+        <option value="hi">排序：高牌</option>
+        <option value="aggr">排序：下注/加注頻率</option>
+        <option value="tex">排序：材質（對子/花色）</option>
+        <option value="expl">排序：剝削度</option>
+      </select>
+      <button class="b" id="bd-png">匯出此圖 PNG</button>
+    </div>
+    <div class="legend" id="bd-legend"></div>
+    <canvas id="bd-chart"></canvas>
+    <div class="hint">第一列是 49 個牌面依權重的加權平均。點任一列可開啟該翻牌的詳細策略。</div>
+  </div>
+</section>
+
+<!-- SPOTS -->
+<section class="view" id="v-spots">
+  <div class="card" style="margin-bottom:16px">
+    <h3>35 個翻牌場景</h3>
+    <div style="overflow:auto"><table id="sp-table"></table></div>
+    <div class="hint">點表頭排序，點列開啟翻牌策略。</div>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="tools" style="margin-top:0"><h3 style="margin:0">各場景翻前到達頻率</h3><div class="grow"></div><button class="b" data-png="reach">匯出 PNG</button></div>
+    <canvas id="sp-reach"></canvas>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="tools" style="margin-top:0"><h3 style="margin:0">OOP 第一動作（49 牌面加權平均）</h3><div class="grow"></div><button class="b" data-png="root">匯出 PNG</button></div>
+    <div class="legend" id="sp-root-legend"></div>
+    <canvas id="sp-root"></canvas>
+  </div>
+  <div class="card">
+    <div class="tools" style="margin-top:0"><h3 style="margin:0">IP 面對過牌（49 牌面加權平均）</h3><div class="grow"></div><button class="b" data-png="x">匯出 PNG</button></div>
+    <div class="legend" id="sp-x-legend"></div>
+    <canvas id="sp-x"></canvas>
+  </div>
+</section>
+
+<!-- REALIZATION -->
+<section class="view" id="v-real">
+  <div class="card">
+    <div class="tools" style="margin-top:0">
+      <select id="re-spot"></select>
+      <select id="re-pos"></select>
+      <button class="b" id="re-png">匯出此圖 PNG</button>
+      <button class="b" id="re-png-all">匯出全部實現率圖</button>
+    </div>
+    <div class="muted small" id="re-sub"></div>
+    <div class="row" style="margin-top:10px">
+      <canvas id="re-grid"></canvas>
+      <div class="detail small muted">
+        <p>權益實現率 R = 翻牌 EV ÷ (底池 × 勝率)。</p>
+        <p><span class="sw" style="background:#d9822b"></span>R &gt; 1：實現超過原始勝率（位置、主動權、好打的牌）。<br>
+        <span class="sw" style="background:#3d6bb3"></span>R &lt; 1：實現不足。</p>
+        <p>翻前第 2、3 輪用這個值修正終點的底池分配。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const RANKS = "AKQJT98765432";
+const SUIT_SYM = {s:"♠", h:"♥", d:"♦", c:"♣"};
+const SUIT_BG = {s:"#4b5263", h:"#c8343c", d:"#2f6fd6", c:"#2f9a4b"};
+const SUIT_FG = {s:"#d6dae3", h:"#ff6a70", d:"#5aa2ff", c:"#56d17a"};
+const BASE_COL = {F:"#4a78c2", X:"#3a9d5d", C:"#3a9d5d", A:"#8e2453"};
+const SIZE_COL = {33:"#e8b54a", 50:"#e98a3a", 75:"#dc5a36", 100:"#bb2f42"};
+const BG = "#0f1218", EMPTY = "#1a1f2b", MUTED = "#8a93a6";
+const FONT = '"Segoe UI","Microsoft JhengHei","PingFang TC",sans-serif';
+const S = {pass: "final", meta: null, pf: {}, roots: {}, spots: {}, real: {}, flopMeta: {}};
+let CLS = [];
+
+/* ---------- helpers ---------- */
+async function api(p, body) {
+  const r = await fetch(p, body ? {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)} : undefined);
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || r.status);
+  return j;
+}
+const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const combosOf = c => c.length === 2 ? 6 : c[2] === "s" ? 4 : 12;
+function actColor(a) {
+  if (BASE_COL[a]) return BASE_COL[a];
+  const n = parseFloat(a.slice(1));
+  return SIZE_COL[n] || "#d9573b";
+}
+function actName(a, pre) {
+  if (a === "F") return "棄牌";
+  if (a === "X") return "過牌";
+  if (a === "C") return "跟注";
+  if (a === "A") return "全下";
+  const n = a.slice(1);
+  if (pre) return "加注到 " + n + "bb";
+  return (a[0] === "B" ? "下注 " : "加注 ") + n + "%";
+}
+function toast(msg, ms = 4000) {
+  const t = $("#toast"); t.innerHTML = msg; t.style.display = "block";
+  clearTimeout(toast.h); if (ms) toast.h = setTimeout(() => t.style.display = "none", ms);
+}
+const tip = $("#tip");
+function showTip(html, e) {
+  tip.innerHTML = html; tip.style.display = "block";
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = e.clientX + 14, y = e.clientY + 14;
+  if (x + w > innerWidth - 8) x = e.clientX - w - 14;
+  if (y + h > innerHeight - 8) y = e.clientY - h - 14;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+const hideTip = () => tip.style.display = "none";
+function boardHTML(fl) {
+  let h = "";
+  for (let i = 0; i < fl.length; i += 2) h += `<span class="pc" style="background:${SUIT_BG[fl[i + 1]]}">${fl[i]}${SUIT_SYM[fl[i + 1]]}</span>`;
+  return h;
+}
+function legendHTML(acts, freqs, pre) {
+  return acts.map((a, i) => `<span><span class="sw" style="background:${actColor(a)}"></span>${actName(a, pre)}${freqs ? " <b>" + pct(freqs[i]) + "</b>" : ""}</span>`).join("");
+}
+function barHTML(acts, freqs, pre) {
+  return acts.map((a, i) => `<div style="width:${freqs[i] * 100}%;background:${actColor(a)}" title="${actName(a, pre)} ${pct(freqs[i])}">${freqs[i] > 0.07 ? a + " " + pct(freqs[i], 0) : ""}</div>`).join("");
+}
+function pctCell(f, a) {
+  return `<td class="pcell"><i style="width:${f * 100}%;background:${actColor(a)}"></i><b>${(f * 100).toFixed(1)}</b></td>`;
+}
+function fillSelect(sel, items, val) {
+  sel.innerHTML = items.map(it => it.group !== undefined
+    ? `<optgroup label="${esc(it.group)}">${it.items.map(o => `<option value="${esc(o.v)}">${esc(o.t)}</option>`).join("")}</optgroup>`
+    : `<option value="${esc(it.v)}">${esc(it.t)}</option>`).join("");
+  if (val !== undefined) sel.value = val;
+}
+function texture(fl) {
+  const r = [fl[0], fl[2], fl[4]], s = new Set([fl[1], fl[3], fl[5]]).size, nr = new Set(r).size;
+  return {suit: s === 1 ? "單色" : s === 2 ? "雙花" : "彩虹", pair: nr === 1 ? "三條" : nr === 2 ? "對子" : "",
+          hi: r.map(c => 12 - RANKS.indexOf(c)), sn: s, nr};
+}
+
+/* ---------- data loaders ---------- */
+const getPF = async p => S.pf[p] ||= await api("/api/preflop?pass=" + p);
+const getRoots = async p => S.roots[p] ||= await api("/api/roots?pass=" + p);
+const getSpots = async p => S.spots[p] ||= await api("/api/spots?pass=" + p);
+const getReal = async p => S.real[p] ||= await api("/api/realization?pass=" + p);
+const getFlopMeta = async (spot, fl) => {
+  const k = spot + "/" + fl;
+  if (!S.flopMeta[k]) {
+    const m = await api(`/api/flop?spot=${spot}&flop=${fl}`);
+    m.byPath = {}; m.nodes.forEach(n => m.byPath[n.path] = n.i);
+    S.flopMeta[k] = m;
+  }
+  return S.flopMeta[k];
+};
+const spotInfo = spot => S.meta.spots.find(s => s.spot === spot);
+
+/* ---------- canvas painting ---------- */
+function setupCanvas(cv, w, h) {
+  const dpr = window.devicePixelRatio || 1;
+  cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+  cv.style.width = w + "px"; cv.style.height = h + "px";
+  const ctx = cv.getContext("2d"); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return ctx;
+}
+function gridCellSize() {
+  return Math.max(24, Math.min(46, Math.floor((Math.min(innerWidth - 64, 620)) / 13)));
+}
+/* cells[k]: {label, w, f:[..], cols:[..]}  or  {label, fill, text} */
+function paintGrid(ctx, x0, y0, cs, cells, o = {}) {
+  const g = 1;
+  for (let k = 0; k < 169; k++) {
+    const r = Math.floor(k / 13), c = k % 13, x = x0 + c * cs, y = y0 + r * cs, cell = cells[k];
+    const iw = cs - 2 * g;
+    ctx.fillStyle = EMPTY; ctx.fillRect(x + g, y + g, iw, iw);
+    let active = false;
+    if (cell.fill) { ctx.fillStyle = cell.fill; ctx.fillRect(x + g, y + g, iw, iw); active = true; }
+    else if (cell.f && cell.w > 1e-4) {
+      active = true;
+      const h = (o.showW === false ? 1 : Math.min(1, cell.w)) * iw;
+      const sum = cell.f.reduce((a, b) => a + b, 0) || 1;
+      ctx.save(); ctx.beginPath(); ctx.rect(x + g, y + g, iw, iw); ctx.clip();
+      let xx = x + g;
+      cell.f.forEach((f, i) => { const ww = iw * f / sum; ctx.fillStyle = cell.cols[i]; ctx.fillRect(xx, y + g + iw - h, ww + 0.6, h); xx += ww; });
+      ctx.restore();
+    }
+    ctx.textBaseline = "top"; ctx.textAlign = "left";
+    ctx.shadowColor = "rgba(0,0,0,.7)"; ctx.shadowBlur = active ? 2 : 0;
+    ctx.fillStyle = active ? "#fff" : "#4f576a";
+    ctx.font = `600 ${Math.round(cs * 0.26)}px ${FONT}`;
+    ctx.fillText(cell.label, x + 3, y + 3);
+    if (cell.text) { ctx.font = `${Math.round(cs * 0.24)}px ${FONT}`; ctx.fillText(cell.text, x + 3, y + cs * 0.56); }
+    ctx.shadowBlur = 0;
+    if (o.sel === k) { ctx.strokeStyle = "#fff"; ctx.lineWidth = 2; ctx.strokeRect(x + 1.5, y + 1.5, cs - 3, cs - 3); }
+  }
+}
+function attachGrid(cv, getCs, onHover, onClick) {
+  cv.onmousemove = e => {
+    const b = cv.getBoundingClientRect(), cs = getCs();
+    const c = Math.floor((e.clientX - b.left) / cs), r = Math.floor((e.clientY - b.top) / cs);
+    if (c < 0 || c > 12 || r < 0 || r > 12) return hideTip();
+    const h = onHover(r * 13 + c); h ? showTip(h, e) : hideTip();
+  };
+  cv.onmouseleave = hideTip;
+  cv.onclick = e => {
+    const b = cv.getBoundingClientRect(), cs = getCs();
+    const c = Math.floor((e.clientX - b.left) / cs), r = Math.floor((e.clientY - b.top) / cs);
+    if (c >= 0 && c < 13 && r >= 0 && r < 13) onClick(r * 13 + c);
+  };
+}
+function drawCardsText(ctx, fl, x, y, size = 13) {
+  ctx.font = `700 ${size}px ${FONT}`; ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  for (let i = 0; i < fl.length; i += 2) {
+    ctx.fillStyle = SUIT_FG[fl[i + 1]];
+    const t = fl[i] + SUIT_SYM[fl[i + 1]]; ctx.fillText(t, x, y); x += ctx.measureText(t).width + 3;
+  }
+}
+/* rows: {label|cards, f:[..], acts:[..], cols?, right, bold} */
+const BAR_RH = 22;
+function paintBars(ctx, x0, y0, W, rows, o = {}) {
+  const rh = BAR_RH, labW = o.labW || 104, rightW = o.rightW || 130, bw = W - labW - rightW;
+  rows.forEach((r, i) => {
+    const y = y0 + i * rh;
+    if (r.bold) { ctx.fillStyle = "#ffffff12"; ctx.fillRect(x0, y, W, rh); }
+    if (o.hover === i) { ctx.fillStyle = "#5aa7ff22"; ctx.fillRect(x0, y, W, rh); }
+    if (r.cards) drawCardsText(ctx, r.cards, x0 + 4, y + rh / 2);
+    else { ctx.font = `${r.bold ? 600 : 400} 12.5px ${FONT}`; ctx.fillStyle = "#e6e9ef"; ctx.textBaseline = "middle"; ctx.textAlign = "left"; ctx.fillText(r.label, x0 + 4, y + rh / 2); }
+    ctx.fillStyle = EMPTY; ctx.fillRect(x0 + labW, y + 3, bw, rh - 6);
+    let x = x0 + labW; const sum = o.noNorm ? 1 : (r.f.reduce((a, b) => a + b, 0) || 1);
+    r.f.forEach((f, j) => {
+      const w = bw * f / sum; ctx.fillStyle = r.cols ? r.cols[j] : actColor(r.acts[j]);
+      ctx.fillRect(x, y + 3, w + 0.4, rh - 6);
+      if (w > 36 && !o.noNorm) {
+        ctx.font = `11px ${FONT}`; ctx.fillStyle = "#fff"; ctx.textAlign = "center"; ctx.shadowColor = "rgba(0,0,0,.6)"; ctx.shadowBlur = 2;
+        ctx.fillText(pct(f / sum, 0), x + w / 2, y + rh / 2); ctx.shadowBlur = 0;
+      }
+      x += w;
+    });
+    ctx.font = `12px ${FONT}`; ctx.fillStyle = MUTED; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    ctx.fillText(r.right || "", x0 + labW + (o.noNorm ? bw * r.f[0] + 6 : bw + 10), y + rh / 2);
+  });
+}
+function drawBarsCanvas(cv, rows, o = {}) {
+  const W = Math.max(360, cv.parentElement.clientWidth - 30);
+  const ctx = setupCanvas(cv, W, rows.length * BAR_RH + 4);
+  ctx.fillStyle = "#171b24"; ctx.fillRect(0, 0, W, rows.length * BAR_RH + 4);
+  paintBars(ctx, 0, 2, W, rows, o);
+  cv.onmousemove = e => {
+    const i = Math.floor((e.clientY - cv.getBoundingClientRect().top - 2) / BAR_RH);
+    if (i < 0 || i >= rows.length) return hideTip();
+    const r = rows[i];
+    if (o.hover !== i) { o.hover = i; ctx.fillStyle = "#171b24"; ctx.fillRect(0, 0, W, rows.length * BAR_RH + 4); paintBars(ctx, 0, 2, W, rows, o); }
+    showTip(o.tipFn ? o.tipFn(r) : `<b>${esc(r.label || r.cards)}</b><br>` + r.acts.map((a, j) => `<span class="sw" style="background:${actColor(a)}"></span>${actName(a)} ${pct(r.f[j])}`).join("<br>"), e);
+  };
+  cv.onmouseleave = () => { hideTip(); o.hover = -1; ctx.fillStyle = "#171b24"; ctx.fillRect(0, 0, W, rows.length * BAR_RH + 4); paintBars(ctx, 0, 2, W, rows, o); };
+  cv.onclick = e => {
+    const i = Math.floor((e.clientY - cv.getBoundingClientRect().top - 2) / BAR_RH);
+    if (i >= 0 && i < rows.length && o.onClick) o.onClick(rows[i]);
+  };
+  cv.style.cursor = o.onClick ? "pointer" : "default";
+}
+
+/* ---------- image export ---------- */
+function wrapLegend(ctx, items, x0, W) {
+  ctx.font = `13px ${FONT}`;
+  const lines = [[]]; let x = 0;
+  items.forEach(it => {
+    const w = 18 + ctx.measureText(it.text).width + 16;
+    if (x + w > W && lines.at(-1).length) { lines.push([]); x = 0; }
+    lines.at(-1).push({...it, x: x0 + x}); x += w;
+  });
+  return lines;
+}
+function paintLegend(ctx, lines, y) {
+  ctx.font = `13px ${FONT}`; ctx.textBaseline = "middle"; ctx.textAlign = "left";
+  lines.forEach((ln, li) => ln.forEach(it => {
+    const yy = y + li * 22 + 10;
+    ctx.fillStyle = it.color; ctx.fillRect(it.x, yy - 6, 12, 12);
+    ctx.fillStyle = "#e6e9ef"; ctx.fillText(it.text, it.x + 18, yy);
+  }));
+}
+function paintHeader(ctx, pad, W, title, sub, board) {
+  ctx.fillStyle = "#e6e9ef"; ctx.font = `600 18px ${FONT}`; ctx.textBaseline = "top"; ctx.textAlign = "left";
+  ctx.fillText(title, pad, pad);
+  let bx = pad + ctx.measureText(title).width + 14;
+  if (board) for (let i = 0; i < board.length; i += 2) {
+    ctx.fillStyle = SUIT_BG[board[i + 1]]; ctx.beginPath(); ctx.roundRect(bx, pad - 4, 26, 30, 4); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.font = `700 14px ${FONT}`; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText(board[i] + SUIT_SYM[board[i + 1]], bx + 13, pad + 11); bx += 30;
+    ctx.textAlign = "left"; ctx.textBaseline = "top";
+  }
+  if (sub) { ctx.fillStyle = MUTED; ctx.font = `13px ${FONT}`; ctx.textBaseline = "top"; ctx.fillText(sub, pad, pad + 30); }
+}
+function composeGrid({title, sub, board, cells, legend, showW, note}) {
+  const cs = 46, pad = 20, W = 13 * cs + pad * 2, headH = pad + 56;
+  const cv = document.createElement("canvas"), tmp = cv.getContext("2d");
+  const lines = legend ? wrapLegend(tmp, legend, pad, W - 2 * pad) : [];
+  const H = headH + 13 * cs + 12 + lines.length * 22 + (note ? 22 : 0) + pad;
+  cv.width = W; cv.height = H;
+  const ctx = cv.getContext("2d");
+  ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
+  paintHeader(ctx, pad, W, title, sub, board);
+  paintGrid(ctx, pad, headH, cs, cells, {showW});
+  paintLegend(ctx, lines, headH + 13 * cs + 12);
+  if (note) { ctx.fillStyle = MUTED; ctx.font = `12px ${FONT}`; ctx.textBaseline = "top"; ctx.fillText(note, pad, H - pad - 14); }
+  return cv;
+}
+function composeBars({title, sub, rows, legend, o = {}}) {
+  const pad = 20, W = 960;
+  const cv = document.createElement("canvas"), tmp = cv.getContext("2d");
+  const lines = legend ? wrapLegend(tmp, legend, pad, W - 2 * pad) : [];
+  const headH = pad + 54, H = headH + lines.length * 22 + 8 + rows.length * BAR_RH + pad;
+  cv.width = W; cv.height = H;
+  const ctx = cv.getContext("2d");
+  ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
+  paintHeader(ctx, pad, W, title, sub);
+  paintLegend(ctx, lines, headH);
+  paintBars(ctx, pad, headH + lines.length * 22 + 8, W - 2 * pad, rows, o);
+  return cv;
+}
+async function savePNG(path, cv) {
+  return api("/api/save_png", {path, data: cv.toDataURL("image/png")});
+}
+async function saveOne(path, cv) {
+  try { const r = await savePNG(path, cv); toast("已儲存：<br><code>" + esc(r.saved) + "</code>"); }
+  catch (e) { toast("儲存失敗：" + esc(e.message)); }
+}
+async function runJobs(jobs, label, conc = 4) {
+  let done = 0, err = 0, i = 0;
+  const t0 = Date.now();
+  const worker = async () => {
+    while (i < jobs.length) {
+      const j = jobs[i++];
+      try { await j(); } catch (e) {
+        try { await j(); } catch (e2) { err++; console.error(e2); }
+      }
+      done++;
+      if (done % 5 === 0 || done === jobs.length) toast(`${label}：${done} / ${jobs.length}${err ? `（${err} 失敗）` : ""}`, 0);
+    }
+  };
+  await Promise.all(Array.from({length: conc}, worker));
+  toast(`${label} 完成：${done - err} 張已存到 <code>results/images/</code>（${((Date.now() - t0) / 1000).toFixed(0)} 秒）${err ? `，${err} 失敗` : ""}`, 8000);
+  return {done, err};
+}
+const passPrefix = () => S.pass === "final" ? "" : S.pass + "/";
+const passLabel = () => S.pass === "final" ? "最終輪" : S.pass;
+
+/* =================== PREFLOP =================== */
+const PFV = {idx: 0, sel: -1};
+function pfChild(n, a) { const t = `${n.actor}:${a}`; return n.path === "(start)" ? t : n.path + " " + t; }
+function pfTokens(n) { return n.path === "(start)" ? [] : n.path.split(" "); }
+function pfShort(n) {
+  const t = pfTokens(n).filter(t => !t.endsWith(":F"));
+  return t.length ? t.map(x => x.replace(":", " ")).join(" → ") + " → " + n.actor : n.actor + " 開池（前位皆棄）";
+}
+function pfLevel(n) { return pfTokens(n).filter(t => /:(R|A)/.test(t)).length; }
+const PF_GROUPS = ["開池 (RFI)", "面對開池", "面對 3bet", "面對 4bet", "面對 5bet / 全下"];
+function pfFile(n, i) {
+  const t = pfTokens(n).filter(t => !t.endsWith(":F")).map(t => t.replace(":", "-"));
+  return String(i).padStart(2, "0") + "_" + n.actor + "_" + (t.length ? t.join("_") : "open");
+}
+function pfCells(n) {
+  const cols = n.labels.map(actColor);
+  return CLS.map((c, k) => ({label: c, w: n.strategy[k] ? (n.reach ? n.reach[k] : 1) : 0, f: n.strategy[k], cols}));
+}
+function pfOverall(n) {
+  const tot = n.labels.map(() => 0); let W = 0;
+  CLS.forEach((c, k) => {
+    const s = n.strategy[k]; if (!s) return;
+    const w = combosOf(c) * (n.reach ? n.reach[k] : 1); W += w;
+    s.forEach((f, i) => tot[i] += w * f);
+  });
+  return {freq: tot.map(x => W ? x / W : 0), combos: W};
+}
+function pfImage(n) {
+  const o = pfOverall(n);
+  return composeGrid({
+    title: pfShort(n), cells: pfCells(n), showW: true,
+    sub: `到達機率 ${pct(n.node_reach, 2)} · 範圍 ${o.combos.toFixed(1)} 組合 · ${passLabel()}`,
+    legend: n.labels.map((a, i) => ({color: actColor(a), text: `${actName(a, true)} ${pct(o.freq[i])}`})),
+    note: "路徑：" + n.path,
+  });
+}
+async function renderPF() {
+  const nodes = await getPF(S.pass);
+  if (PFV.idx >= nodes.length) PFV.idx = 0;
+  const n = nodes[PFV.idx], byPath = {};
+  nodes.forEach((x, i) => byPath[x.path] = i);
+  // side list
+  const groups = PF_GROUPS.map(() => []);
+  nodes.forEach((x, i) => groups[Math.min(4, pfLevel(x))].push(i));
+  $("#pf-list").innerHTML = groups.map((g, gi) => g.length ? `<h4>${PF_GROUPS[gi]}</h4>` + g.map(i =>
+    `<div data-i="${i}" class="${i === PFV.idx ? "on" : ""}"><span>${esc(pfShort(nodes[i]))}</span><span class="muted">${pct(nodes[i].node_reach, 1)}</span></div>`).join("") : "").join("");
+  $("#pf-list").querySelectorAll("div[data-i]").forEach(d => d.onclick = () => { PFV.idx = +d.dataset.i; renderPF(); });
+  // crumbs
+  const toks = pfTokens(n);
+  $("#pf-crumbs").innerHTML = `<span data-p="(start)">起點</span>` + toks.map((t, i) =>
+    `<span data-p="${esc(i ? toks.slice(0, i).join(" ") : "(start)")}" class="${t.endsWith(":F") ? "fold" : ""}">${esc(t)}</span>`).join("");
+  $("#pf-crumbs").querySelectorAll("span").forEach(s => s.onclick = () => { if (byPath[s.dataset.p] !== undefined) { PFV.idx = byPath[s.dataset.p]; renderPF(); } });
+  const o = pfOverall(n);
+  $("#pf-title").textContent = pfShort(n);
+  $("#pf-sub").textContent = `${n.actor} 行動 · 到達機率 ${pct(n.node_reach, 2)} · 範圍 ${o.combos.toFixed(1)} 組合（1326 中） · ${passLabel()}`;
+  $("#pf-bar").innerHTML = barHTML(n.labels, o.freq, true);
+  $("#pf-legend").innerHTML = legendHTML(n.labels, o.freq, true);
+  // action buttons
+  $("#pf-acts").innerHTML = n.labels.map((a, i) => {
+    const cp = pfChild(n, a), spot = S.meta.spots.find(s => s.preflop_line === cp);
+    let note = "", dis = false, data = "";
+    if (byPath[cp] !== undefined) data = `data-i="${byPath[cp]}"`;
+    else if (spot) { note = " → 翻牌 " + spot.spot; data = `data-spot="${spot.spot}"`; }
+    else { dis = true; note = a === "F" ? "" : a === "C" ? "（全下攤牌）" : ""; }
+    return `<button style="background:${actColor(a)}" ${data} ${dis ? "disabled" : ""}>${actName(a, true)} ${pct(o.freq[i], 1)}${esc(note)}</button>`;
+  }).join("");
+  $("#pf-acts").querySelectorAll("button").forEach(b => b.onclick = () => {
+    if (b.dataset.i) { PFV.idx = +b.dataset.i; PFV.sel = -1; renderPF(); }
+    else if (b.dataset.spot) openFlop(b.dataset.spot);
+  });
+  // grid
+  const cs = gridCellSize(), cv = $("#pf-grid"), cells = pfCells(n);
+  const ctx = setupCanvas(cv, 13 * cs, 13 * cs);
+  paintGrid(ctx, 0, 0, cs, cells, {sel: PFV.sel, showW: $("#pf-w").checked});
+  attachGrid(cv, () => cs, k => {
+    const s = n.strategy[k]; if (!s) return `<b>${CLS[k]}</b><br><span class="muted">不在範圍內</span>`;
+    return `<b>${CLS[k]}</b> <span class="muted">範圍 ${pct(n.reach ? n.reach[k] : 1, 0)}</span><br>` +
+      n.labels.map((a, i) => `<span class="sw" style="background:${actColor(a)}"></span>${actName(a, true)} ${pct(s[i])}`).join("<br>");
+  }, k => { PFV.sel = k; renderPF(); });
+  renderPFDetail(n);
+}
+async function renderPFDetail(n) {
+  const k = PFV.sel, d = $("#pf-detail");
+  if (k < 0) {
+    // top hands per action
+    d.innerHTML = `<h3>各動作的組合數</h3><table><tr><th>動作</th><th>組合</th><th>佔比</th></tr>` +
+      n.labels.map((a, i) => { const o = pfOverall(n); return `<tr><td><span class="sw" style="background:${actColor(a)}"></span>${actName(a, true)}</td><td>${(o.combos * o.freq[i]).toFixed(1)}</td><td>${pct(o.freq[i])}</td></tr>`; }).join("") +
+      `</table><p class="muted small">點格子看單一手牌的頻率與各輪比較。</p>`;
+    return;
+  }
+  const c = CLS[k], s = n.strategy[k];
+  let h = `<h3>${c} <span class="muted small">${combosOf(c)} 組合 · 範圍 ${pct(n.reach ? n.reach[k] : 1, 1)}</span></h3>`;
+  if (!s) h += `<p class="muted">此手牌不在 ${n.actor} 的範圍內。</p>`;
+  else h += `<table><tr><th>動作</th><th>頻率</th></tr>` + n.labels.map((a, i) => `<tr><td>${actName(a, true)}</td>${pctCell(s[i], a)}</tr>`).join("") + `</table>`;
+  // pass comparison
+  const rows = [];
+  for (const p of S.meta.passes) {
+    const nodes = await getPF(p), m = nodes.find(x => x.path === n.path);
+    if (m && m.strategy[k]) rows.push(`<tr><td>${p === "final" ? "最終" : p}</td>` + m.labels.map((a, i) => pctCell(m.strategy[k][i], a)).join("") + `</tr>`);
+  }
+  if (rows.length > 1) h += `<h3 style="margin-top:14px">各輪迭代比較</h3><table><tr><th>輪次</th>${n.labels.map(a => `<th>${a}</th>`).join("")}</tr>${rows.join("")}</table>`;
+  if (PFV.sel === k) d.innerHTML = h;
+}
+$("#pf-w").onchange = renderPF;
+$("#pf-png").onclick = async () => { const nodes = await getPF(S.pass); saveOne(`${passPrefix()}preflop/${pfFile(nodes[PFV.idx], PFV.idx)}`, pfImage(nodes[PFV.idx])); };
+$("#pf-png-all").onclick = async () => { await runJobs(await preflopJobs(), "翻前圖"); };
+async function preflopJobs() {
+  const nodes = await getPF(S.pass);
+  return nodes.map((n, i) => () => savePNG(`${passPrefix()}preflop/${pfFile(n, i)}`, pfImage(n)));
+}
+
+/* =================== FLOP =================== */
+const FV = {spot: null, flop: null, path: "root", sel: -1, data: null};
+function spotOptions() {
+  const g = {SRP: [], "3BP": [], "4BP": []};
+  S.meta.spots.forEach(s => g[s.spot.slice(0, 3)].push({v: s.spot, t: `${s.spot}（${s["reach_freq_%"]}%）`}));
+  return [{group: "單加注底池 SRP", items: g.SRP}, {group: "3bet 底池", items: g["3BP"]}, {group: "4bet 底池", items: g["4BP"]}];
+}
+function flopChild(path, a) { return path === "root" ? a : path + " " + a; }
+function actorPos(m, n) { return n.actor === "OOP" ? m.oop : m.ip; }
+function amount(m, n, a) {
+  const me = n.actor === "OOP" ? 0 : 1, [c0, c1] = n.contrib, call = Math.abs(c0 - c1);
+  if (a === "F" || a === "X") return "";
+  if (a === "C") return call.toFixed(1) + "bb";
+  if (a === "A") return (m.stack - n.contrib[me]).toFixed(1) + "bb";
+  const x = parseFloat(a.slice(1)) / 100;
+  return (a[0] === "B" ? n.pot * x : call + (n.pot + call) * x).toFixed(1) + "bb";
+}
+function flopCells(d, mode) {
+  const n = d.node, cols = n.actions.map(actColor);
+  if (mode === "ev") {
+    const vals = d.class_ev.filter((v, k) => d.class_weight[k] > 1e-3);
+    const lo = Math.min(...vals), hi = Math.max(...vals);
+    return CLS.map((c, k) => d.class_weight[k] > 1e-3
+      ? {label: c, fill: ramp((d.class_ev[k] - lo) / (hi - lo || 1)), text: d.class_ev[k].toFixed(1)}
+      : {label: c});
+  }
+  return CLS.map((c, k) => ({label: c, w: d.class_weight[k], f: d.class_freq[k], cols}));
+}
+function ramp(t) {
+  const stops = [[0, [32, 44, 74]], [0.5, [46, 110, 170]], [0.8, [220, 160, 60]], [1, [245, 210, 90]]];
+  t = Math.max(0, Math.min(1, t));
+  for (let i = 1; i < stops.length; i++) if (t <= stops[i][0]) {
+    const [t0, a] = stops[i - 1], [t1, b] = stops[i], u = (t - t0) / (t1 - t0);
+    return `rgb(${a.map((v, j) => Math.round(v + (b[j] - v) * u)).join(",")})`;
+  }
+}
+function flopImage(spot, fl, m, d, mode = "s") {
+  const n = d.node, pos = actorPos(m, n);
+  return composeGrid({
+    title: spot, board: fl, cells: flopCells(d, mode), showW: true,
+    sub: `${pos}（${n.actor}）行動 · 路徑 ${n.path} · 底池 ${n.pot.toFixed(1)}bb · 剝削度 ${m.exploitability_pct_pot}% pot`,
+    legend: mode === "ev" ? null : n.actions.map((a, i) => ({color: actColor(a), text: `${actName(a)} ${pct(n.freq[i])}`})),
+    note: mode === "ev" ? "顏色＝翻牌起點每手 EV（bb）" : `OOP=${m.oop} IP=${m.ip} · 有效籌碼 ${m.stack}bb`,
+  });
+}
+function flopFile(spot, fl, path, mode) {
+  return `flop/${spot}/${fl}_${path.replace(/ /g, "_")}${mode === "ev" ? "_EV" : ""}`;
+}
+function openFlop(spot, fl, path = "root") {
+  FV.spot = spot; FV.flop = fl || null; FV.path = path; FV.sel = -1;
+  showTab("flop");
+}
+async function renderFlop() {
+  if (!FV.spot) FV.spot = S.meta.spots[0].spot;
+  fillSelect($("#fl-spot"), spotOptions(), FV.spot);
+  const flops = S.meta.flops, totW = flops.reduce((a, f) => a + f.weight, 0);
+  if (!FV.flop) FV.flop = flops[0].flop;
+  fillSelect($("#fl-flop"), flops.map(f => ({v: f.flop, t: `${f.flop}（權重 ${(f.weight / totW * 100).toFixed(2)}%）`})), FV.flop);
+  $("#fl-board").innerHTML = boardHTML(FV.flop);
+  const m = await getFlopMeta(FV.spot, FV.flop);
+  if (m.byPath[FV.path] === undefined) FV.path = "root";
+  const i = m.byPath[FV.path];
+  const d = await api(`/api/node?spot=${FV.spot}&flop=${FV.flop}&i=${i}`);
+  FV.data = d;
+  const n = d.node, pos = actorPos(m, n);
+  $("#fl-info").textContent = `OOP=${m.oop}　IP=${m.ip}　起始底池 ${m.pot}bb　籌碼 ${m.stack}bb　剝削度 ${m.exploitability_pct_pot}% pot　${m.iterations} 次迭代`;
+  const toks = FV.path === "root" ? [] : FV.path.split(" ");
+  $("#fl-crumbs").innerHTML = `<span data-p="root">翻牌起點</span>` + toks.map((t, j) => {
+    const p = j ? toks.slice(0, j).join(" ") : "root", who = actorPos(m, m.nodes[m.byPath[p]]);
+    return `<span data-p="${esc(p)}">${who} ${esc(t)}</span>`;
+  }).join("");
+  $("#fl-crumbs").querySelectorAll("span").forEach(s => s.onclick = () => { FV.path = s.dataset.p; FV.sel = -1; renderFlop(); });
+  const combos = d.class_weight.reduce((a, w, k) => a + w * combosOf(CLS[k]), 0);
+  $("#fl-title").textContent = `${pos}（${n.actor}）行動`;
+  $("#fl-sub").textContent = `底池 ${n.pot.toFixed(2)}bb · 本街投入 OOP ${n.contrib[0].toFixed(1)} / IP ${n.contrib[1].toFixed(1)} · 範圍 ${combos.toFixed(1)} 組合`;
+  $("#fl-bar").innerHTML = barHTML(n.actions, n.freq);
+  $("#fl-legend").innerHTML = $("#fl-mode").value === "ev" ? `<span class="muted">顏色＝翻牌起點每手 EV（bb），越亮越高</span>` : legendHTML(n.actions, n.freq);
+  $("#fl-acts").innerHTML = n.actions.map((a, j) => {
+    const cp = flopChild(FV.path, a), has = m.byPath[cp] !== undefined;
+    const end = a === "F" ? "（結束）" : a === "C" || a === "X" ? (has ? "" : "（攤牌結算）") : "";
+    return `<button style="background:${actColor(a)}" data-p="${esc(cp)}" ${has ? "" : "disabled"}>${actName(a)} ${amount(m, n, a)} · ${pct(n.freq[j])}${end}</button>`;
+  }).join("");
+  $("#fl-acts").querySelectorAll("button").forEach(b => b.onclick = () => { FV.path = b.dataset.p; FV.sel = -1; renderFlop(); });
+  const cs = gridCellSize(), cv = $("#fl-grid"), mode = $("#fl-mode").value;
+  const ctx = setupCanvas(cv, 13 * cs, 13 * cs);
+  paintGrid(ctx, 0, 0, cs, flopCells(d, mode), {sel: FV.sel, showW: $("#fl-w").checked});
+  attachGrid(cv, () => cs, k => {
+    if (d.class_weight[k] < 1e-4) return `<b>${CLS[k]}</b><br><span class="muted">不在範圍內</span>`;
+    return `<b>${CLS[k]}</b> <span class="muted">範圍 ${pct(d.class_weight[k], 0)} · EV ${d.class_ev[k].toFixed(2)}bb</span><br>` +
+      n.actions.map((a, j) => `<span class="sw" style="background:${actColor(a)}"></span>${actName(a)} ${pct(d.class_freq[k][j])}`).join("<br>");
+  }, k => { FV.sel = k; renderFlop(); });
+  const rep = flops.find(f => f.flop === FV.flop);
+  $("#fl-rep").innerHTML = rep ? `此代表牌面涵蓋 ${rep.represents.length} 種同構翻牌：<span class="small">${rep.represents.join("、")}</span>` : "";
+  renderFlopDetail(d);
+}
+function renderFlopDetail(d) {
+  const n = d.node, el = $("#fl-detail"), k = FV.sel;
+  const head = `<tr><th>手牌</th><th>權重</th>${n.actions.map(a => `<th>${a}</th>`).join("")}<th>EV</th></tr>`;
+  const row = c => `<tr><td>${handHTML(c.h)}</td><td>${c.w.toFixed(2)}</td>${c.s.map((f, j) => pctCell(f, n.actions[j])).join("")}<td>${c.ev.toFixed(2)}</td></tr>`;
+  if (k < 0) {
+    const top = [...d.combos].sort((a, b) => b.w - a.w || b.ev - a.ev).slice(0, 400);
+    el.innerHTML = `<h3>範圍內所有組合 <span class="muted small">（依權重；點格子篩選）</span></h3><div class="scroll"><table>${head}${top.map(row).join("")}</table></div>`;
+    return;
+  }
+  const list = d.combos.filter(c => c.c === k);
+  el.innerHTML = `<h3>${CLS[k]} <span class="muted small">範圍 ${pct(d.class_weight[k], 1)} · 平均 EV ${d.class_ev[k].toFixed(2)}bb</span>
+    <button class="b small" style="float:right;padding:2px 8px" id="fl-clear">全部</button></h3>` +
+    (list.length ? `<div class="scroll"><table>${head}${list.map(row).join("")}</table></div>` : `<p class="muted">此類手牌不在範圍內（或被牌面阻擋）。</p>`) +
+    `<p class="muted small">EV＝該組合在翻牌起點的期望值（bb），${n.actor === "OOP" ? "OOP" : "IP"} 視角。</p>`;
+  $("#fl-clear").onclick = () => { FV.sel = -1; renderFlop(); };
+}
+function boardText(fl) {
+  let h = "";
+  for (let i = 0; i < fl.length; i += 2) h += `${fl[i]}<span style="color:${SUIT_FG[fl[i + 1]]}">${SUIT_SYM[fl[i + 1]]}</span>`;
+  return h;
+}
+function handHTML(h) {
+  return `<b>${h[0]}<span style="color:${SUIT_FG[h[1]]}">${SUIT_SYM[h[1]]}</span>${h[2]}<span style="color:${SUIT_FG[h[3]]}">${SUIT_SYM[h[3]]}</span></b>`;
+}
+$("#fl-spot").onchange = e => { FV.spot = e.target.value; FV.sel = -1; renderFlop(); };
+$("#fl-flop").onchange = e => { FV.flop = e.target.value; FV.sel = -1; renderFlop(); };
+$("#fl-mode").onchange = renderFlop;
+$("#fl-w").onchange = renderFlop;
+const stepFlop = dlt => { const f = S.meta.flops, i = f.findIndex(x => x.flop === FV.flop); FV.flop = f[(i + dlt + f.length) % f.length].flop; FV.sel = -1; renderFlop(); };
+$("#fl-prev").onclick = () => stepFlop(-1);
+$("#fl-next").onclick = () => stepFlop(1);
+$("#fl-png").onclick = async () => {
+  const m = await getFlopMeta(FV.spot, FV.flop), mode = $("#fl-mode").value;
+  saveOne(flopFile(FV.spot, FV.flop, FV.path, mode), flopImage(FV.spot, FV.flop, m, FV.data, mode));
+};
+$("#fl-png-all").onclick = () => runJobs(flopJobs(FV.spot, [FV.path], $("#fl-mode").value), `${FV.spot} 翻牌圖`);
+function flopJobs(spot, paths, mode = "s") {
+  const jobs = [];
+  for (const f of S.meta.flops) for (const p of paths) jobs.push(async () => {
+    const m = await getFlopMeta(spot, f.flop);
+    if (m.byPath[p] === undefined) return;
+    const d = await api(`/api/node?spot=${spot}&flop=${f.flop}&i=${m.byPath[p]}`);
+    await savePNG(flopFile(spot, f.flop, p, mode), flopImage(spot, f.flop, m, d, mode));
+    delete S.flopMeta[spot + "/" + f.flop];
+  });
+  return jobs;
+}
+
+/* =================== BOARDS =================== */
+const BV = {spot: null, node: "root", rows: null};
+function nodeLabel(spot, key, actor) {
+  const s = spotInfo(spot), pos = actor === "OOP" ? s.OOP : s.IP;
+  if (key === "root") return `${pos}（OOP）第一動作`;
+  if (key === "X") return `${pos}（IP）面對過牌`;
+  return `${pos}（${actor}）面對 ${key}`;
+}
+function boardRows(roots, spot, key, sort) {
+  const table = roots[spot] || {}, flops = Object.keys(table).filter(f => table[f].nodes[key]);
+  if (!flops.length) return null;
+  const acts = [...new Set(flops.flatMap(f => table[f].nodes[key].a))];
+  const order = ["F", "X", "C", "B33", "B50", "B75", "B100", "R33", "R50", "R75", "R100", "A"];
+  acts.sort((a, b) => order.indexOf(a) - order.indexOf(b));
+  const vec = nd => acts.map(a => { const j = nd.a.indexOf(a); return j < 0 ? 0 : nd.f[j]; });
+  let W = 0; const avg = acts.map(() => 0);
+  const rows = flops.map(f => {
+    const fl = table[f], v = vec(fl.nodes[key]); W += fl.w; v.forEach((x, j) => avg[j] += fl.w * x);
+    const aggr = v.reduce((s, x, j) => s + (/^[BRA]/.test(acts[j]) ? x : 0), 0);
+    return {cards: f, flop: f, f: v, acts, w: fl.w, expl: fl.expl, aggr, tex: texture(f), right: `權重 ${pct(fl.w, 2)} · 剝削 ${fl.expl.toFixed(1)}%`};
+  });
+  const cmp = {
+    w: (a, b) => b.w - a.w,
+    hi: (a, b) => b.tex.hi[0] - a.tex.hi[0] || b.tex.hi[1] - a.tex.hi[1] || b.tex.hi[2] - a.tex.hi[2],
+    aggr: (a, b) => b.aggr - a.aggr,
+    tex: (a, b) => a.tex.nr - b.tex.nr || a.tex.sn - b.tex.sn || b.tex.hi[0] - a.tex.hi[0],
+    expl: (a, b) => b.expl - a.expl,
+  }[sort || "w"];
+  rows.sort(cmp);
+  const actor = table[flops[0]].nodes[key].actor;
+  return {acts, actor, avg: avg.map(x => x / W), rows: [{label: "加權平均", f: avg.map(x => x / W), acts, bold: true, right: `${flops.length} 個牌面`}, ...rows]};
+}
+async function renderBoards() {
+  const roots = await getRoots(S.pass);
+  if (!BV.spot) BV.spot = S.meta.spots[0].spot;
+  fillSelect($("#bd-spot"), spotOptions(), BV.spot);
+  const anyFlop = Object.values(roots[BV.spot] || {})[0];
+  const keys = anyFlop ? Object.keys(anyFlop.nodes).sort((a, b) => (a === "root" ? -1 : b === "root" ? 1 : a.split(" ").length - b.split(" ").length || a.localeCompare(b, "en", {numeric: true}))) : [];
+  if (!keys.includes(BV.node)) BV.node = "root";
+  fillSelect($("#bd-node"), keys.map(k => ({v: k, t: nodeLabel(BV.spot, k, anyFlop.nodes[k].actor) + (k === "root" || k === "X" ? "" : "")})), BV.node);
+  const R = boardRows(roots, BV.spot, BV.node, $("#bd-sort").value);
+  if (!R) return;
+  $("#bd-legend").innerHTML = legendHTML(R.acts, R.avg);
+  BV.rows = R;
+  drawBarsCanvas($("#bd-chart"), R.rows, {onClick: r => r.flop && openFlop(BV.spot, r.flop, BV.node), tipFn: r =>
+    `<b>${r.flop ? boardText(r.flop) : esc(r.label)}</b>${r.tex ? ` <span class="muted">${r.tex.pair} ${r.tex.suit}</span>` : ""}<br>` +
+    r.acts.map((a, j) => `<span class="sw" style="background:${actColor(a)}"></span>${actName(a)} ${pct(r.f[j])}`).join("<br>") +
+    (r.flop ? `<br><span class="muted">${r.right}</span>` : "")});
+}
+function boardImage(roots, spot, key, sort = "w") {
+  const R = boardRows(roots, spot, key, sort), s = spotInfo(spot);
+  return R && composeBars({
+    title: `${spot} · ${nodeLabel(spot, key, R.actor)}`,
+    sub: `49 個代表牌面 · 底池 ${s.pot_bb}bb · 籌碼 ${s.stack_bb}bb · ${passLabel()}`,
+    rows: R.rows, legend: R.acts.map((a, j) => ({color: actColor(a), text: `${actName(a)} ${pct(R.avg[j])}`})),
+  });
+}
+$("#bd-spot").onchange = e => { BV.spot = e.target.value; renderBoards(); };
+$("#bd-node").onchange = e => { BV.node = e.target.value; renderBoards(); };
+$("#bd-sort").onchange = renderBoards;
+$("#bd-png").onclick = async () => saveOne(`${passPrefix()}boards/${BV.spot}_${BV.node.replace(/ /g, "_")}`, boardImage(await getRoots(S.pass), BV.spot, BV.node, $("#bd-sort").value));
+
+/* =================== SPOTS =================== */
+const SPV = {sort: "reach_freq_%", dir: -1};
+const SP_COLS = [
+  ["spot", "場景"], ["OOP", "OOP"], ["IP", "IP"], ["pot_bb", "底池"], ["stack_bb", "籌碼"], ["reach_freq_%", "到達頻率 %"],
+  ["OOP_combos", "OOP 組合"], ["IP_combos", "IP 組合"], ["avg_EV_OOP_bb", "OOP EV"], ["avg_EV_IP_bb", "IP EV"],
+  ["max_exploitability_%pot", "最大剝削 %pot"], ["preflop_line", "翻前路線"]];
+function spotAvg(roots, spot, key) {
+  const R = boardRows(roots, spot, key, "w");
+  return R && {acts: R.acts, f: R.avg, actor: R.actor};
+}
+function spotChartRows(spots, roots, key) {
+  const acts = new Set(); const rows = spots.map(s => {
+    const a = spotAvg(roots, s.spot, key); if (!a) return null;
+    a.acts.forEach(x => acts.add(x));
+    return {label: s.spot, f: a.f, acts: a.acts, right: `${key === "root" ? s.OOP : s.IP} · 到達 ${s["reach_freq_%"]}%`, spot: s.spot};
+  }).filter(Boolean);
+  const order = ["F", "X", "C", "B33", "B50", "B75", "B100", "R33", "R50", "R75", "R100", "A"];
+  return {rows, acts: [...acts].sort((a, b) => order.indexOf(a) - order.indexOf(b))};
+}
+async function renderSpots() {
+  const spots = await getSpots(S.pass), roots = await getRoots(S.pass);
+  const sorted = [...spots].sort((a, b) => {
+    const x = a[SPV.sort], y = b[SPV.sort];
+    return (typeof x === "number" ? x - y : String(x).localeCompare(String(y))) * SPV.dir;
+  });
+  $("#sp-table").innerHTML = `<thead><tr>${SP_COLS.map(([k, t]) => `<th data-k="${k}">${t}${SPV.sort === k ? (SPV.dir > 0 ? " ▲" : " ▼") : ""}</th>`).join("")}</tr></thead><tbody>` +
+    sorted.map(s => `<tr data-spot="${s.spot}">${SP_COLS.map(([k]) => `<td${k === "preflop_line" ? ' class="muted small" style="text-align:left"' : ""}>${esc(s[k])}</td>`).join("")}</tr>`).join("") + "</tbody>";
+  $("#sp-table").querySelectorAll("th").forEach(th => th.onclick = () => { const k = th.dataset.k; SPV.dir = SPV.sort === k ? -SPV.dir : -1; SPV.sort = k; renderSpots(); });
+  $("#sp-table").querySelectorAll("tbody tr").forEach(tr => tr.onclick = () => openFlop(tr.dataset.spot));
+  const maxR = Math.max(...spots.map(s => s["reach_freq_%"]));
+  const reachRows = spots.map(s => ({label: s.spot, f: [s["reach_freq_%"] / maxR], cols: [s.spot.startsWith("SRP") ? "#5aa7ff" : s.spot.startsWith("3BP") ? "#e98a3a" : "#c2437a"], right: s["reach_freq_%"].toFixed(2) + "%", acts: ["_"], spot: s.spot}));
+  drawBarsCanvas($("#sp-reach"), reachRows, {noNorm: true, rightW: 80, onClick: r => openFlop(r.spot), tipFn: r => `<b>${r.label}</b><br>到達頻率 ${r.right}`});
+  for (const [key, cv, lg] of [["root", "#sp-root", "#sp-root-legend"], ["X", "#sp-x", "#sp-x-legend"]]) {
+    const R = spotChartRows(spots, roots, key);
+    $(lg).innerHTML = legendHTML(R.acts);
+    drawBarsCanvas($(cv), R.rows, {onClick: r => { BV.spot = r.spot; BV.node = key; showTab("boards"); }});
+  }
+}
+async function spotImages() {
+  const spots = await getSpots(S.pass), roots = await getRoots(S.pass), out = {};
+  const maxR = Math.max(...spots.map(s => s["reach_freq_%"]));
+  out.reach = composeBars({title: "各翻牌場景的翻前到達頻率", sub: `藍＝SRP　橘＝3bet 底池　紫＝4bet 底池 · ${passLabel()}`, o: {noNorm: true, rightW: 80},
+    rows: spots.map(s => ({label: s.spot, f: [s["reach_freq_%"] / maxR], cols: [s.spot.startsWith("SRP") ? "#5aa7ff" : s.spot.startsWith("3BP") ? "#e98a3a" : "#c2437a"], right: s["reach_freq_%"].toFixed(2) + "%"}))});
+  for (const [key, t] of [["root", "OOP 第一動作"], ["x", "IP 面對過牌"]]) {
+    const R = spotChartRows(spots, roots, key === "x" ? "X" : key);
+    out[key] = composeBars({title: `各場景 ${t}（49 牌面加權平均）`, sub: passLabel(), rows: R.rows, legend: R.acts.map(a => ({color: actColor(a), text: actName(a)}))});
+  }
+  return out;
+}
+document.querySelectorAll("[data-png]").forEach(b => b.onclick = async () => { const im = await spotImages(); saveOne(`${passPrefix()}overview/spots_${b.dataset.png}`, im[b.dataset.png]); });
+
+/* =================== REALIZATION =================== */
+const RV = {spot: null, pos: null};
+function realColor(v) {
+  const mid = [42, 47, 61], lo = [61, 107, 179], hi = [217, 130, 43];
+  const t = Math.max(-1, Math.min(1, (v - 1) / 0.6)), to = t < 0 ? lo : hi, u = Math.abs(t);
+  return `rgb(${mid.map((m, j) => Math.round(m + (to[j] - m) * u)).join(",")})`;
+}
+function realCells(R) { return CLS.map(c => R[c] === undefined ? {label: c} : {label: c, fill: realColor(R[c]), text: R[c].toFixed(2)}); }
+function realImage(real, spot, pos) {
+  return composeGrid({title: `${spot} · ${pos} 權益實現率`, sub: `R = EV ÷ (底池 × 勝率) · ${passLabel()}`, cells: realCells(real[spot][pos]),
+    legend: [{color: realColor(0.4), text: "R ≤ 0.4"}, {color: realColor(0.8), text: "0.8"}, {color: realColor(1), text: "1.0"}, {color: realColor(1.2), text: "1.2"}, {color: realColor(1.6), text: "≥ 1.6"}]});
+}
+async function renderReal() {
+  const real = await getReal(S.pass), spots = Object.keys(real);
+  if (!RV.spot || !real[RV.spot]) RV.spot = spots.includes(S.meta.spots[0].spot) ? S.meta.spots[0].spot : spots[0];
+  fillSelect($("#re-spot"), spotOptions().map(g => ({...g, items: g.items.filter(o => real[o.v])})), RV.spot);
+  const poss = Object.keys(real[RV.spot]);
+  if (!poss.includes(RV.pos)) RV.pos = poss[0];
+  fillSelect($("#re-pos"), poss.map(p => ({v: p, t: p})), RV.pos);
+  const R = real[RV.spot][RV.pos], vals = Object.values(R);
+  $("#re-sub").textContent = `${RV.spot} · ${RV.pos} · 169 類手牌中位數 ${[...vals].sort((a, b) => a - b)[vals.length >> 1].toFixed(2)} · ${passLabel()}`;
+  const cs = gridCellSize(), cv = $("#re-grid");
+  const ctx = setupCanvas(cv, 13 * cs, 13 * cs);
+  paintGrid(ctx, 0, 0, cs, realCells(R));
+  attachGrid(cv, () => cs, k => `<b>${CLS[k]}</b><br>R = ${R[CLS[k]] !== undefined ? R[CLS[k]].toFixed(3) : "—"}`, () => {});
+}
+$("#re-spot").onchange = e => { RV.spot = e.target.value; renderReal(); };
+$("#re-pos").onchange = e => { RV.pos = e.target.value; renderReal(); };
+$("#re-png").onclick = async () => saveOne(`${passPrefix()}realization/${RV.spot}_${RV.pos}`, realImage(await getReal(S.pass), RV.spot, RV.pos));
+$("#re-png-all").onclick = async () => runJobs(await realJobs(), "實現率圖");
+async function realJobs() {
+  const real = await getReal(S.pass), jobs = [];
+  for (const sp of Object.keys(real)) for (const pos of Object.keys(real[sp])) jobs.push(() => savePNG(`${passPrefix()}realization/${sp}_${pos}`, realImage(real, sp, pos)));
+  return jobs;
+}
+
+/* =================== EXPORT ALL =================== */
+async function exportAll(withFlops) {
+  const jobs = [...await preflopJobs(), ...await realJobs()];
+  const roots = await getRoots(S.pass);
+  jobs.push(async () => { const im = await spotImages(); for (const k in im) await savePNG(`${passPrefix()}overview/spots_${k}`, im[k]); });
+  for (const s of S.meta.spots) for (const key of ["root", "X"]) jobs.push(async () => {
+    const cv = boardImage(roots, s.spot, key); if (cv) await savePNG(`${passPrefix()}boards/${s.spot}_${key}`, cv);
+  });
+  if (withFlops && S.pass === "final") for (const s of S.meta.spots) jobs.push(...flopJobs(s.spot, ["root", "X"]));
+  return runJobs(jobs, "匯出全部圖片", 4);
+}
+$("#export-all").onclick = async () => {
+  const withFlops = S.pass === "final" && confirm("要一併匯出每個場景 × 49 翻牌的 13×13 策略圖嗎？\n（根節點 + IP 面對過牌，共約 3400 張，需數分鐘）\n\n確定＝包含　取消＝只匯出總覽圖（約 300 張）");
+  exportAll(withFlops);
+};
+
+/* =================== shell =================== */
+const RENDER = {preflop: renderPF, flop: renderFlop, boards: renderBoards, spots: renderSpots, real: renderReal};
+let curTab = "preflop";
+async function showTab(t) {
+  if (!RENDER[t]) t = "preflop";
+  curTab = t;
+  document.querySelectorAll("#tabs button").forEach(b => b.classList.toggle("on", b.dataset.tab === t));
+  document.querySelectorAll(".view").forEach(v => v.classList.toggle("on", v.id === "v-" + t));
+  history.replaceState(null, "", "#" + t);
+  try { await RENDER[t](); } catch (e) { console.error(e); toast("載入失敗：" + esc(e.message)); }
+}
+document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => showTab(b.dataset.tab));
+let rsz; addEventListener("resize", () => { clearTimeout(rsz); rsz = setTimeout(() => RENDER[curTab](), 150); });
+
+(async () => {
+  S.meta = await api("/api/meta");
+  CLS = S.meta.classes;
+  fillSelect($("#pass"), S.meta.passes.map(p => ({v: p, t: p === "final" ? "最終（第 3 輪）" : p === "pass1" ? "第 1 輪" : "第 2 輪"})), "final");
+  $("#pass").onchange = e => { S.pass = e.target.value; RENDER[curTab](); };
+  const q = new URLSearchParams(location.search);
+  if (q.get("export")) {
+    const ex = q.get("export");
+    const r = ex.startsWith("spot:") ? await runJobs(flopJobs(ex.slice(5), ["root", "X"]), ex) : await exportAll(ex === "all");
+    await api("/api/export_done", {count: r.done - r.err, errors: r.err});
+    return;
+  }
+  showTab(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
